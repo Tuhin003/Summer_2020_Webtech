@@ -1,0 +1,32 @@
+<students>
+	<student>
+		<student1>23</student1>
+		<name>John_Carter</name>
+		<admission>
+			<date>25</date>
+			<month>12</month>
+			<year>2015</year>
+		<admission>
+	</student>
+
+	<student>
+		<student1>29</student1>
+		<name>Bob_Marshal</name>
+		<admission>
+			<date>13</date>
+			<month>01</month>
+			<year>1999</year>
+		<admission>
+	</student>
+
+	<student>
+		<student1>35</student1>
+		<name>Clark_Kent</name>
+		<admission>
+			<date>17</date>
+			<month>06</month>
+			<year>2005</year>
+		<admission>
+	</student>
+	
+
