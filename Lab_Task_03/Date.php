@@ -18,7 +18,6 @@ if (isset($_GET['month'])) {
 	$a=(int)$_GET['month'];
 	if (strlen($a)>0) {
 		if ($a>0 && $a<=12) {
-			# code...
 			echo $a;
 		}
 		else
