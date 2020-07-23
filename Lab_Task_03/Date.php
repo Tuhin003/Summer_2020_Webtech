@@ -2,12 +2,9 @@
 $b=true;
 
 if (isset($_GET['day'])) {
-	# code...
 	$a=(int)$_GET['day'];
 	if (strlen($a)>0) {
-		# code...
 		if ($a>0 && $a<=31) {
-			# code...
 			echo $a;
 		}
 		else
@@ -18,10 +15,8 @@ if (isset($_GET['day'])) {
 }
 
 if (isset($_GET['month'])) {
-	# code...
 	$a=(int)$_GET['month'];
 	if (strlen($a)>0) {
-		# code...
 		if ($a>0 && $a<=12) {
 			# code...
 			echo $a;
@@ -33,12 +28,9 @@ if (isset($_GET['month'])) {
 	}
 }
 if (isset($_GET['year'])) {
-	# code...
 	$a=(int)$_GET['year'];
 	if (strlen($a)>0) {
-		# code...
 		if ($a>=1900 && $a<=2025) {
-			# code...
 			echo $a;
 		}
 		else
