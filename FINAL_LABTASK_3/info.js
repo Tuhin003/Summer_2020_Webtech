@@ -32,7 +32,7 @@ function validatename()
 	var name=document.getElementById('name').value;
 	if (name=="") 
 	{
-		document.getElementById('namemsg').innerHTML="Name can not be empty";
+		document.getElementById('namemessage').innerHTML="Name can not be empty";
 		return false;
 	}	
 	else
@@ -137,7 +137,7 @@ function removerdob()
 //blood group
 function validatebd()
 {
-	var a=document.form.bd;
+	var a=document.info.bd;
 	if (a.value == "Select Blood Group") 
 	{
 		document.getElementById('bdmessage').innerHTML="Select A Blood Group";
@@ -151,11 +151,11 @@ function validatebd()
 //degree
 function validatedegree()
 {
-	if(document.getElementById('degree1').checked || document.getElementById('degree2').checked || document.getElementById('degree3').checked || document.getElementById('degree4').checked)
+	if(document.getElementById('SSC').checked || document.getElementById('HSC').checked || document.getElementById('BSc').checked || document.getElementById('MSc').checked)
 	{
 		return true;
 	}
-	if(document.getElementById('degree1').checked=="" || document.getElementById('degree2').checked=="" || document.getElementById('degree3').checked=="" || document.getElementById('degree4').checked=="")
+	if(document.getElementById('SSC').checked=="" || document.getElementById('HSC').checked=="" || document.getElementById('BSc').checked=="" || document.getElementById('MSc').checked=="")
 	{
 		document.getElementById('degreemessage').innerHTML="Choose atleast one degree";
 		return false;
@@ -168,7 +168,7 @@ function validateprofile()
 	if (document.getElementById('number').value!="" && document.getElementById('file').value!="") 
 	{
 		
-		if (parseInt(number,35)>0) 
+		if (parseInt(number,10)>0) 
 		{
 			return true;
 		}
@@ -188,6 +188,6 @@ function removerpicture()
 {
 	if(document.getElementById('number').value!="")
 	{
-		document.getElementById('filemsg').innerHTML="";
+		document.getElementById('filemessage').innerHTML="";
 	}
 }
