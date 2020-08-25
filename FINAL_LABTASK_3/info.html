@@ -1,8 +1,10 @@
 <html>
 <head>
 	<title></title>
+	<script type="text/javascript" src="info.js"></script>
 </head>
 <body>
+	<form name="info" action="info.php" method="post" onsubmit="return validate()">
 		<table align="center" width="40%" height="70%" border="1">
 				<tr>
 					<td colspan="3"> 
@@ -12,15 +14,17 @@
 				<tr height="10%">
 					<td> Name</td>
 					<td>
-						<input type="text" name="username">
+						<input type="text" id="name" name="name" onkeyup="remove_name()">
 					</td>
+					<td id="namemessage"></td>
 					<td width="7%"></td>
 				</tr>
 				<tr height="10%">
 					<td> Email</td>
 					<td>
-						<input type="email" name="email">
+						<input type="email" id="email" name="email" onkeyup="remove_email()">
 					</td>
+					<td id="emailmessage"></td>
 					<td width="7%"></td>
 				</tr>
 				<tr height="10%">
@@ -30,13 +34,16 @@
 						<input type="radio" name="gender"> Female
 						<input type="radio" name="gender"> Other
 					</td>
+					<td id="gendermessage"></td>
 					<td width="7%"></td>
 				</tr>
 				<tr height="10%">
 					<td> Date of Birth</td>
 					<td>
-						<input type="text" size="1%">/<input type="text" size="1%">/<input type="text" size="2%"> (dd/mm/yyyy)
+						<input type="text" size="1%" id="day" name="day" onkeyup="removerdob()">/<input type="text" size="1%" id="month" name="month" onkeyup="removerdob()">/<input type="text" size="2%" id="year" name="year" onkeyup="removerdob()"> (dd/mm/yyyy)
 					</td>
+
+					<td id="dobmsg"></td>
 					<td width="7%"></td>
 				</tr>
 				<tr height="10%">
@@ -49,6 +56,7 @@
 							<option>AB+</option>
 						</select>
 					</td>
+					<td id="bodmsg"></td>
 					<td width="7%"></td>
 				</tr>
 				<tr height="10%">
@@ -59,6 +67,7 @@
 						<input type="checkbox"> BSc. 
 						<input type="checkbox"> MSc. 
 					</td>
+					<td id="degreemessage"></td>
 					<td width="7%"></td>
 				</tr>
 				<tr height="10%">
