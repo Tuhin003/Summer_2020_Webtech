@@ -1,5 +1,5 @@
 <?php
-	require_once('../db/db.php');
+	require_once('../db/db.php'); 
 
 	function getByID($id){
 		$conn = dbConnection();
@@ -21,7 +21,7 @@
 			echo "DB connection error";
 		}
 
-		$sql = "select * from final";
+		$sql = "select * from lab";
 		$result = mysqli_query($conn, $sql);
 		$users = [];
 
